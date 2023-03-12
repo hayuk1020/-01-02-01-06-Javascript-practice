@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>fetch</title>
+    </head>
+    <body>
+        <script>
+            /*fetch('http://kdt.roto.codes/todos')
+                .then(res => {
+                    return res.json()
+                })
+                .then(data => {
+                    console.log(data)
+                }) */
+            const $image = document.createElement('img')
+            const imageUrl = 'https://indistreet.com/_next/image?'
+                fetch(imageUrl)
+                    .then(res => {
+                        return res.blob ()
+                    })
+                    .then(data => {
+                        const url = URL.createObjectURL(data)
+
+                        console.log(url)
+                    })
+
+        </script>
+    </body>
+</html>
